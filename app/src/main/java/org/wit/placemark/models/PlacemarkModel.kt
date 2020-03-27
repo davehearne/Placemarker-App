@@ -12,5 +12,6 @@ interface PlacemarkStore {
 @Parcelize
 data class PlacemarkModel(var id: Long = 0,
                           var title: String = "",
-                          var description: String = "") : Parcelable
+                          var description: String = "",
+                          var image: String = "") : Parcelable
 
