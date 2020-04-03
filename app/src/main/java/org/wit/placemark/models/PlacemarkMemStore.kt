@@ -22,6 +22,10 @@ class PlacemarkMemStore : PlacemarkStore, AnkoLogger {
         placemarks.add(placemark)
         logAll()
     }
+    override fun delete(placemark: PlacemarkModel) {
+        placemarks.remove(placemark)
+        logAll()
+    }
 
     override fun update(placemark: PlacemarkModel) {
         var foundPlacemark: PlacemarkModel? = placemarks.find { p -> p.id == placemark.id }
