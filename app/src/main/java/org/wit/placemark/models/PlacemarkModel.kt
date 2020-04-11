@@ -7,6 +7,7 @@ interface PlacemarkStore {
     fun findAll(): List<PlacemarkModel>
     fun create(placemark: PlacemarkModel)
     fun update(placemark: PlacemarkModel)
+    fun delete(placemark: PlacemarkModel)
 }
 @Parcelize
 data class Location(var lat: Double = 0.0,
